@@ -4,33 +4,51 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Mario Bross The Movie</title>
+    <title>Honda Argentina</title>
     <link rel="stylesheet" href="./assets/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 </head>
 <body>
     <header>
-        <img src="https://supermariothemovie.netlify.app/assets/img/logo_mariobros.png" alt="logo">
-        <h1>Super Mario Bross The Movie</h1>
+        <img src="https://motos.honda.com.ar/assets/honda-motos-logo-8228287956be08ac306e59b11dfcfe9e.png" alt="logo">
+        <h1>The power of dreams</h1>
     </header>
     <nav>
         <a class="activo" href="./index.html">Inicio</a>
-        <a href="./personajes.html">Personajes</a>
+        <a href="./Vehiculos.html">Vehiculos</a>
         <a href="./informacion.html">Informacion</a>
         <a href="./contacto.html">Contacto</a>
     </nav>
     <main>
-        <h2>The Super Mario Bross - Posters</h2>
-        <div class="galeria">
-            <img src="https://supermariothemovie.netlify.app/assets/img/poster_mario2.jpg" alt="">
-            <img src="https://supermariothemovie.netlify.app/assets/img/poster_mario5.jpg" alt="">
-            <img src="https://supermariothemovie.netlify.app/assets/img/poster_mario6.jpg" alt="">
-            <img src="https://supermariothemovie.netlify.app/assets/img/poster_mario7.jpg" alt="">
-            <img src="https://supermariothemovie.netlify.app/assets/img/poster_mario8.jpg" alt="">
-            <img src="https://supermariothemovie.netlify.app/assets/img/poster_mario9.jpg" alt="">
-        </div>
+        <h2>Descubre tu Honda</h2>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide" style="background-image: url('./assets/Imagen1.jpeg');"></div>
+              <div class="swiper-slide" style="background-image: url('./assets/Imagen2.jpeg');"></div>
+              <div class="swiper-slide" style="background-image: url('./assets/Imagen3.jpeg');"></div>
+            </div>
+          </div>
+        
+          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+          <script>
+            var swiper = new Swiper('.swiper-container', {
+              loop: true,
+              autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+              },
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              },
+            });
+          </script>
+
+    
     </main>
     <footer>
-        <h4>Super Mario The Movie 2023</h4>
+        <h4>HONDA - DERECHOS ROBADOS</h4>
     </footer>
 </body>
 </html>

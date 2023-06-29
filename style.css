@@ -1,8 +1,82 @@
+.card {
+    width: 400px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    transition: all .5s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 380px;
+    min-height: 200px;
+    height: 200px;
+    object-fit:cover;
+}
+
+h1 {
+    text-align: center;
+}
+
+#buscar {
+    width: 80vw;
+}
+
+fieldset {
+    text-align: center;
+}
+
+#contenedor_cards{
+    text-align: center;
+}
+
+.container_info {
+    display: flex;
+  }
+
+  .column {
+    padding: 20px;
+  }
+
+  input:focus {
+    background-color:lightblue;
+  }
+
+.Vehiculo-card{
+    width: 400px;
+    border: 1px solid #080808;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    transition: all .5s ease-in-out;
+}
+
+.Vehiculo-card:hover{
+    transform: scale(1.05);
+}
+
+.Vehiculo-card img{
+    width: 380px;
+    min-height: 200px;
+    height: 200px;
+    object-fit:cover;
+}
+
+.Vehiculo-card button{
+    background-color: red;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 
 header{
@@ -28,7 +102,11 @@ h1{
   font-size: 3rem;
   flex-grow: 1;
 }
-
+main h3{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
 nav{
     background-color: grey;
     display: flex;
@@ -51,9 +129,16 @@ nav a{
     color: black;
     font-weight: bolder;
     font-size: 1.5rem;
-    background-color: white;
+    background-color:white;
     transition: all 0.5s;
 }
+
+#titulo{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+}
+
 #footer{
     justify-content: center;
     text-align: center;
@@ -71,52 +156,9 @@ a:hover{
     background-color: black;
     color: white; 
 }
-
-main{
-    background-color: white;
-    padding: 1rem;
-    font-size: 1rem;
-    
-}
-
-main div{
-    border-style: solid;
-    border-color: black;
-    border-radius: 50px;
-    display: inline-block;
-    text-align: center;
-    padding: 10px;
-    background-color: coral;
-}
-main h2{
-    font-size: 25px;
-}
-
-main dl{
-    padding: 1rem;  
-   
-}
-
-main dt{
-    text-decoration: underline;
-    display: inline-block;
-    align-items: flex-start;
-}
-
-main dd{
-    display: inline-block;
-    margin: 1rem;
-    color: blue;  
-}
-
 footer{
-    background-color: red;
+    background-color: blue;
     padding: 1px;
 }
 
-h4{
-    justify-content: center;
-    text-align: center;
-    padding: 0.8px;
-    font-size: 0.5rem;
-}
+  
